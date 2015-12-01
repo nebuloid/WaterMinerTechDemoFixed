@@ -1,0 +1,13 @@
+diff a/WaterMinerTechDemo/WaterMinerTechDemo-csharp.sln b/WaterMinerTechDemo/WaterMinerTechDemo-csharp.sln	(rejected hunks)
+@@ -17,7 +17,11 @@
+  	GlobalSection(SolutionProperties) = preSolution
+  		HideSolutionNode = FALSE
+  	EndGlobalSection
+++<<<<<<< Updated upstream
+ +																																																																																							GlobalSection(MonoDevelopProperties) = preSolution
+++=======
++ 																																																																																										GlobalSection(MonoDevelopProperties) = preSolution
+++>>>>>>> Stashed changes
+  		StartupItem = Assembly-CSharp.csproj
+  		Policies = $0
+  		$0.TextStylePolicy = $1

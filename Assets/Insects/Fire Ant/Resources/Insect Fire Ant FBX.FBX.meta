@@ -1,0 +1,312 @@
+fileFormatVersion: 2
+guid: e575c20faaded72479567a37b9538473
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Body
+    100026: Bone Tail
+    100028: Bone Claw R
+    100030: Bone Claw L
+    100032: Bone Head
+    100036: Insect Fire Ant
+    100038: Bone Leg 03 Toe L
+    100040: Bone Leg 03 Calf L
+    100042: Bone Leg 03 Thigh L
+    100044: Bone Leg 03 Root L
+    100046: Bone Leg 02 Toe L
+    100048: Bone Leg 02 Calf L
+    100050: Bone Leg 02 Thigh L
+    100052: Bone Leg 02 Root L
+    100054: Bone Leg 01 Toe L
+    100056: Bone Leg 01 Calf L
+    100058: Bone Leg 01 Thigh L
+    100060: Bone Leg 01 Root L
+    100062: Bone Antennae R Tip
+    100064: Bone Antennae R Root
+    100066: Bone Antennae L Tip
+    100068: Bone Antennae L Root
+    100070: Bone Leg 01 Toe R
+    100072: Bone Leg 01 Calf R
+    100074: Bone Leg 01 Thigh R
+    100076: Bone Leg 01 Root R
+    100078: Bone Leg 02 Toe R
+    100080: Bone Leg 02 Calf R
+    100082: Bone Leg 02 Thigh R
+    100084: Bone Leg 02 Root R
+    100086: Bone Leg 03 Toe R
+    100088: Bone Leg 03 Calf R
+    100090: Bone Leg 03 Thigh R
+    100092: Bone Leg 03 Root R
+    400000: //RootNode
+    400002: Body
+    400026: Bone Tail
+    400028: Bone Claw R
+    400030: Bone Claw L
+    400032: Bone Head
+    400036: Insect Fire Ant
+    400038: Bone Leg 03 Toe L
+    400040: Bone Leg 03 Calf L
+    400042: Bone Leg 03 Thigh L
+    400044: Bone Leg 03 Root L
+    400046: Bone Leg 02 Toe L
+    400048: Bone Leg 02 Calf L
+    400050: Bone Leg 02 Thigh L
+    400052: Bone Leg 02 Root L
+    400054: Bone Leg 01 Toe L
+    400056: Bone Leg 01 Calf L
+    400058: Bone Leg 01 Thigh L
+    400060: Bone Leg 01 Root L
+    400062: Bone Antennae R Tip
+    400064: Bone Antennae R Root
+    400066: Bone Antennae L Tip
+    400068: Bone Antennae L Root
+    400070: Bone Leg 01 Toe R
+    400072: Bone Leg 01 Calf R
+    400074: Bone Leg 01 Thigh R
+    400076: Bone Leg 01 Root R
+    400078: Bone Leg 02 Toe R
+    400080: Bone Leg 02 Calf R
+    400082: Bone Leg 02 Thigh R
+    400084: Bone Leg 02 Root R
+    400086: Bone Leg 03 Toe R
+    400088: Bone Leg 03 Calf R
+    400090: Bone Leg 03 Thigh R
+    400092: Bone Leg 03 Root R
+    2300000: Insect Fire Ant
+    3300000: Insect Fire Ant
+    4300000: Ant
+    4300002: Bone Body
+    4300004: Bone Head
+    4300006: Bone Claw L
+    4300008: Bone Antennae L Root
+    4300010: Bone Antennae L Tip
+    4300012: Bone Antennae R Root
+    4300014: Bone Antennae R Tip
+    4300016: Bone Claw R
+    4300018: Bone Tail
+    4300020: Bone Leg 01 Root L
+    4300022: Bone Leg 01 Thigh L
+    4300024: Bone Leg 01 Calf L
+    4300026: Bone Leg 01 Toe L
+    4300028: Bone Leg 02 Root L
+    4300030: Bone Leg 02 Thigh L
+    4300032: Bone Leg 02 Calf L
+    4300034: Bone Leg 02 Toe L
+    4300036: Bone Leg 03 Root L
+    4300038: Bone Leg 03 Thigh L
+    4300040: Bone Leg 03 Calf L
+    4300042: Bone Leg 03 Toe L
+    4300044: Bone Leg 03 Root R
+    4300046: Bone Leg 03 Thigh R
+    4300048: Bone Leg 03 Calf R
+    4300050: Bone Leg 03 Toe R
+    4300052: Bone Leg 02 Root R
+    4300054: Bone Leg 02 Thigh R
+    4300056: Bone Leg 02 Calf R
+    4300058: Bone Leg 02 Toe R
+    4300060: Bone Leg 01 Root R
+    4300062: Bone Leg 01 Thigh R
+    4300064: Bone Leg 01 Calf R
+    4300066: Bone Leg 01 Toe R
+    4300068: Insect Fire Ant
+    4300070: Body
+    7400002: Take 001
+    7400006: walk
+    7400008: idle
+    7400010: attack
+    7400012: gothit
+    7400014: death
+    7400016: fireant_walk
+    7400018: fireant_idle
+    7400020: fireant_attack
+    7400022: fireant_gothit
+    7400024: fireant_death
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Body
+    13700002: Insect Fire Ant
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: fireant_walk
+      takeName: 
+      firstFrame: 1
+      lastFrame: 30
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: fireant_idle
+      takeName: 
+      firstFrame: 31
+      lastFrame: 60
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: fireant_attack
+      takeName: 
+      firstFrame: 61
+      lastFrame: 85
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: fireant_gothit
+      takeName: 
+      firstFrame: 86
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: fireant_death
+      takeName: 
+      firstFrame: 101
+      lastFrame: 145
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .100000001
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

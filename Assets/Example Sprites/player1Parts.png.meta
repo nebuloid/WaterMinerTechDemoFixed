@@ -1,0 +1,172 @@
+fileFormatVersion: 2
+guid: 020d73dbb1d6c434da38e8e91fcf8d8c
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: eyeballs
+    21300002: pupils
+    21300004: arm
+    21300006: mouth
+    21300008: head
+    21300010: antennae
+    21300012: wings
+    21300014: torso
+    21300016: idleFeet
+    21300018: frontfoot
+    21300020: backfoot
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: eyeballs
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 408
+        width: 88
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pupils
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 366
+        width: 61
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arm
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 303
+        width: 96
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mouth
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 274
+        width: 88
+        height: 73
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: head
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 343
+        width: 132
+        height: 111
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: antennae
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 399
+        width: 83
+        height: 55
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wings
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 180
+        width: 109
+        height: 90
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: torso
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 191
+        width: 149
+        height: 88
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: idleFeet
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 124
+        width: 154
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: frontfoot
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 16
+        width: 140
+        height: 92
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: backfoot
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 9
+        width: 112
+        height: 95
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

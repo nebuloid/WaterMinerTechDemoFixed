@@ -1,0 +1,15 @@
+diff a/WaterMinerTechDemo/WaterMinerTechDemo.userprefs b/WaterMinerTechDemo/WaterMinerTechDemo.userprefs	(rejected hunks)
+@@ -1,12 +0,0 @@
+-﻿<Properties>
+-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\YoshiControllerScript.cs">
+-    <Files>
+-      <File FileName="Assets\Scripts\YoshiControllerScript.cs" Line="28" Column="3" />
+-    </Files>
+-  </MonoDevelop.Ide.Workbench>
+-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+-    <BreakpointStore />
+-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+-</Properties>
+\ No newline at end of file
