@@ -8,6 +8,9 @@ public class FollowPlayerController : MonoBehaviour {
 
 	//move speed 
 	public int moveSpeed = 3; 
+	Animator anim;
+
+	public bool chasing = true;
 
 	//speed of turning
 	public int rotationSpeed = 3; 
@@ -21,17 +24,20 @@ public class FollowPlayerController : MonoBehaviour {
 	} 
 	 
 		
-		public void Start() {
-		//target the player
-		target = GameObject.FindWithTag("Player").transform; 
-			
-		}
-		
-		public void Update () { 
-			//rotate to look at the player 
-			myTransform.rotation = Quaternion.Slerp(myTransform.rotation, 
-			Quaternion.LookRotation(target.position - myTransform.position), rotationSpeed*Time.deltaTime);
+	public void Start() {
+	//target the player
+	target = GameObject.FindWithTag("Player").transform; 
+	anim = GetComponent<Animator> ();
+	}
+	
+	public void Update () { 
+		//rotate to look at the player 
+		if (chasing) {
+			myTransform.rotation = Quaternion.Slerp (myTransform.rotation, 
+			Quaternion.LookRotation (target.position - myTransform.position), rotationSpeed * Time.deltaTime);
 			//move towards the player
 			myTransform.position += myTransform.forward * moveSpeed * Time.deltaTime;
+			anim.SetFloat ("Speed", moveSpeed);
 		}
+	}
 }
