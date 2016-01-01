@@ -2,6 +2,11 @@
 Thumbs.db
 ehthumbs.db
 
+Library/*
+ProjectSettings/*
+Library\*
+ProjectSettings\*
+
 # Folder config file
 Desktop.ini
 
