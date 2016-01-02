@@ -16,13 +16,13 @@ public class WaterController : MonoBehaviour {
 		}
 	}
 	
-	void OnTriggerEnter2D(Collider2D other){
+	void OnTriggerEnter(Collider other){
 		
 		if (other.tag == "Player") { 
 			//player dies
 			gameController.Victory ();
 			
 		}
-		Destroy(transform.GetComponent<Collider2D>()); 
+		Destroy(transform.GetComponent<Collider>()); 
 	}
 }

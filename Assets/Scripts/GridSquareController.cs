@@ -21,11 +21,9 @@ public class GridSquareController : MonoBehaviour {
 		}
 
 		//UnityEngine.Debug.Log(spriteRenderer.bounds.extents.x);
-		BoxCollider2D box = (BoxCollider2D) mPlayer.GetComponent("BoxCollider2D");
-		CircleCollider2D circle = (CircleCollider2D) mPlayer.GetComponent("CircleCollider2D");
+		CapsuleCollider cap = (CapsuleCollider) mPlayer.GetComponent("CapsuleCollider");
 
-		Physics2D.IgnoreCollision(box, transform.GetComponent<Collider2D>());
-		Physics2D.IgnoreCollision(circle, transform.GetComponent<Collider2D>());
+		Physics.IgnoreCollision(cap, transform.GetComponent<BoxCollider>());
 	}
 	
 	void OnMouseDown(){

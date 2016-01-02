@@ -54,7 +54,7 @@ public class SpiderController : MonoBehaviour {
 		if(! dead){
 			mAnim.SetFloat ("Speed", 1);
 			//Patrol ();
-			GetComponent<Rigidbody2D>().velocity = new Vector2 (mMoveX * _maxSpeedX, mMoveY * _maxSpeedY);
+			GetComponent<Rigidbody>().velocity = new Vector2 (mMoveX * _maxSpeedX, mMoveY * _maxSpeedY);
 		}
 	}
 	void Update()
@@ -67,8 +67,8 @@ public class SpiderController : MonoBehaviour {
 		if (mPlayerObject == null)
 			return;
 		//UnityEngine.Debug.Log(Camera.main.ScreenToWorldPoint(Input.mousePosition).x - player.rigidbody2D.transform.position.x);
-		if (Mathf.Abs (Camera.main.ScreenToWorldPoint(Input.mousePosition).x - mPlayerObject.GetComponent<Rigidbody2D>().transform.position.x) < 2 &&
-		    Mathf.Abs (Camera.main.ScreenToWorldPoint(Input.mousePosition).y - mPlayerObject.GetComponent<Rigidbody2D>().transform.position.y) < 2) {
+		if (Mathf.Abs (Camera.main.ScreenToWorldPoint(Input.mousePosition).x - mPlayerObject.GetComponent<Rigidbody>().transform.position.x) < 2 &&
+		    Mathf.Abs (Camera.main.ScreenToWorldPoint(Input.mousePosition).y - mPlayerObject.GetComponent<Rigidbody>().transform.position.y) < 2) {
 			if (mPlayerAnimator != null)
 				mPlayerAnimator.Play("Swing");
 		}

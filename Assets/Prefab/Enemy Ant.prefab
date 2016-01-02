@@ -340,11 +340,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 412042}
   - 95: {fileID: 9511998}
-  - 50: {fileID: 5011998}
   - 114: {fileID: 11411998}
-  - 61: {fileID: 6111998}
   - 114: {fileID: 11467142}
-  - 114: {fileID: 11412000}
+  - 136: {fileID: 13686228}
+  - 54: {fileID: 5405432}
   m_Layer: 10
   m_Name: Fire Ant FBX
   m_TagString: Toad
@@ -679,7 +678,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 112018}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: -14.8199997, y: 6.32999992, z: 0}
+  m_LocalPosition: {x: -14.4899998, y: 5.33576584, z: -7.19999981}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 412042}
@@ -986,32 +985,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 412004}
   m_RootOrder: 0
---- !u!50 &5011998
-Rigidbody2D:
+--- !u!54 &5405432
+Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 112042}
+  serializedVersion: 2
   m_Mass: 1
-  m_LinearDrag: 0
+  m_Drag: 0
   m_AngularDrag: 0
-  m_GravityScale: 0
-  m_FixedAngle: 0
+  m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 1
-  m_SleepingMode: 1
+  m_Interpolate: 0
+  m_Constraints: 0
   m_CollisionDetection: 0
---- !u!61 &6111998
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 112042}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: 1, y: 1}
-  m_Center: {x: 0, y: 0}
 --- !u!95 &9511998
 Animator:
   serializedVersion: 3
@@ -1025,6 +1013,8 @@ Animator:
   m_CullingMode: 0
   m_UpdateMode: 1
   m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11411998
@@ -1039,21 +1029,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _scoreValue: 200
---- !u!114 &11412000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 112042}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d27fd974c049a114f8676e4dd614af58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _maxSpeedX: 3
-  _maxSpeedY: 0
-  _flipTimerX: 3
-  _flipTimerY: 4
 --- !u!114 &11467142
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1069,6 +1044,19 @@ MonoBehaviour:
   _maxSpeedY: 0
   _flipTimerX: 3
   _flipTimerY: 4
+--- !u!136 &13686228
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112042}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: .25999999
+  m_Height: 1.71000004
+  m_Direction: 0
+  m_Center: {x: .129999995, y: .280000001, z: 0}
 --- !u!137 &13711998
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -1078,15 +1066,19 @@ SkinnedMeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
   - {fileID: 2100000, guid: 10e69029df38c1b45b315bfaea738007, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
   serializedVersion: 2
@@ -1144,4 +1136,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 112018}
   m_IsPrefabParent: 1
-  m_IsExploded: 1
