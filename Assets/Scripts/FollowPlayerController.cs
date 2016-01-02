@@ -25,9 +25,9 @@ public class FollowPlayerController : MonoBehaviour {
 	 
 		
 	public void Start() {
-	//target the player
-	target = GameObject.FindWithTag("Player").transform; 
-	anim = GetComponent<Animator> ();
+		//target the player
+		target = GameObject.FindWithTag("Player").transform; 
+		anim = GetComponent<Animator> ();
 	}
 	
 	public void Update () { 

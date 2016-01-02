@@ -84,7 +84,7 @@ public class TooBeeController : MonoBehaviour {
 			direction = new Vector2 (mousePosition.x - transform.position.x, mousePosition.y - transform.position.y).normalized;
 
 			nextFire = Time.time + fireRate;
-			Vector3 startPosition = new Vector3 (shotSpawn.position.x, shotSpawn.position.y, 0.0f);
+			Vector3 startPosition = new Vector3 (shotSpawn.position.x, shotSpawn.position.y, -7.5f);
 
 			float distX = Mathf.Abs(mousePosition.x - transform.position.x);
 			float distY = Mathf.Abs(mousePosition.y - transform.position.y);
