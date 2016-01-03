@@ -33,6 +33,8 @@ public class TooBeeController : MonoBehaviour {
 	//change stance
 	public int stance = 1;
 	private int numStances = 2;
+	private int mNumCans;
+
 
 	private bool flipOk = false;
 	private bool mFirstTouch = false;
@@ -177,5 +179,9 @@ public class TooBeeController : MonoBehaviour {
         // as it controls what is visually in the front of the scene and what is background
         // there can be as many layers as different z positions entered into the scene and the prefabs
         transform.position = new Vector3 (mStartingPosition.x, mStartingPosition.y, transform.position.z);
+	}
+
+	public void setNumCans(int _numCans) {
+		mNumCans = _numCans;
 	}
 }

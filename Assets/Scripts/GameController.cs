@@ -29,6 +29,7 @@ public class GameController : MonoBehaviour {
 
 	//public string _winString;
 	public string _level;
+	public int _numCans;
 
 	private bool gameOver;
 	//this is turned to true when the level is completed
@@ -42,8 +43,7 @@ public class GameController : MonoBehaviour {
 	private GameObject waterGoal;
 	private InvulnerabilityColision invulnerabilityColision;
 
-	void Start ()
-	{
+	void Start() {
 		PlayerPrefs.SetInt ("levelScore", 0);
 		mCurrentLevel = PlayerPrefs.GetInt ("currentLevel");
 		gameOver = false;
@@ -80,9 +80,10 @@ public class GameController : MonoBehaviour {
         }
 
 		waterGoal = GameObject.FindWithTag ("Water");
+		playerController.setNumCans(_numCans);
 	}
 
-	void Update (){
+	void Update() {
 		isInvulnerable = invulnerabilityColision.getIsInvulnerable();
 		//if the level isn't finished then decrement the score
 		//if (!isWindowShown) {
@@ -96,7 +97,7 @@ public class GameController : MonoBehaviour {
 		}
 	}
 	
-    void FixedUpdate () {
+    void FixedUpdate() {
 
         if (Input.GetButton ("Fire1")) { 
 			if (gameOver) {
@@ -139,23 +140,21 @@ public class GameController : MonoBehaviour {
 		//won = true;
 	}
 
-	void UpdateScore (){
+	void UpdateScore() {
 		scoreText.text = "Score: " + _scoreInt;
 	}
 
-	public void AddScore (int newScoreValue){
+	public void AddScore(int newScoreValue) {
 		_scoreFloat += newScoreValue;
 		UpdateScore();
 	}
 
-	public bool GameOverBool
-	{
+	public bool GameOverBool {
         get { return gameOver; }
 		set { gameOver = value; }
 	}
 
-	public void DecrementLives ()
-	{
+	public void DecrementLives() {
         _lives--;
         if(_lives==0){
             removeHeads (_lives);
@@ -187,7 +186,7 @@ public class GameController : MonoBehaviour {
 		scoreText.text = "Score: " + _scoreInt;
 	}
 
-    private void GameOver (){
+    private void GameOver() {
         gameOver = true;
         GetComponent<AudioSource>().clip = _deathSound;
         GetComponent<AudioSource>().Play();

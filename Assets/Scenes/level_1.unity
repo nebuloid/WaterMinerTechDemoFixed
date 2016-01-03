@@ -1010,34 +1010,6 @@ Prefab:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 11429232, guid: e7324794b5799fe48897ac96875328bb, type: 2}
-      propertyPath: m_Color.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11429232, guid: e7324794b5799fe48897ac96875328bb, type: 2}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11429232, guid: e7324794b5799fe48897ac96875328bb, type: 2}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11486450, guid: e7324794b5799fe48897ac96875328bb, type: 2}
-      propertyPath: m_Color.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11486450, guid: e7324794b5799fe48897ac96875328bb, type: 2}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11486450, guid: e7324794b5799fe48897ac96875328bb, type: 2}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11429232, guid: e7324794b5799fe48897ac96875328bb, type: 2}
-      propertyPath: m_Text
-      value: 'SCORE:'
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e7324794b5799fe48897ac96875328bb, type: 2}
   m_IsPrefabParent: 0
