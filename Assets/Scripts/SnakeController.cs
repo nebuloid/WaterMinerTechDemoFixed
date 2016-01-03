@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Diagnostics;
 
-public class AntController : MonoBehaviour {
+public class SnakeController : MonoBehaviour {
 	
 	public float _maxSpeedX = 10f;
 	public float _maxSpeedY = 10f;
@@ -79,10 +79,10 @@ public class AntController : MonoBehaviour {
 		mMoveY = -mMoveY;
 	}
 	
-	void FlipX(){
+	void FlipX(){ // snake model is set up different, to flip visual x here we actually need to set the z property scale instead
 		mFacingRight = !mFacingRight;
 		Vector3 theScale = transform.localScale;
-		theScale.x *= -1;
+		theScale.z *= -1;
 		transform.localScale = theScale;
 	}
 }
