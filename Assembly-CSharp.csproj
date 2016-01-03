@@ -70,17 +70,11 @@
      <Compile Include="Assets\Scripts\WaterController.cs" />
      <None Include="Assets\Insects\Spider\readme.txt" />
      <None Include="Assets\Insects\Fire Ant\Readme.txt" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>S:/programs/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>S:/programs/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>S:/programs/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>S:/programs/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>S:/programs/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>

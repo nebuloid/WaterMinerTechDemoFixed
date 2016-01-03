@@ -33,14 +33,15 @@ public class TooBeeController : MonoBehaviour {
 	//change stance
 	public int stance = 1;
 	private int numStances = 2;
-	private int mNumCans;
-
-
+	private float mNumCans;
+	
 	private bool flipOk = false;
 	private bool mFirstTouch = false;
+
+	private bool mStanceLocked = false;
 	
 	// Use this for initialization
-	void Start () {
+	void Start() {
 		anim = GetComponent<Animator> ();
 
 		//move with click
@@ -54,7 +55,7 @@ public class TooBeeController : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void FixedUpdate () {
+	void FixedUpdate() {
 		anim.SetFloat ("vSpeed", GetComponent<Rigidbody>().velocity.y);
 	
 		float move = Input.GetAxis ("Horizontal");
@@ -63,6 +64,7 @@ public class TooBeeController : MonoBehaviour {
 			anim.SetFloat ("Speed", Mathf.Abs (mTargetPoint.x - transform.position.x));
 			//Debug.Log("move: " + move);
 		}
+
 		GetComponent<Rigidbody>().velocity = new Vector2 (move * maxSpeed, GetComponent<Rigidbody>().velocity.y);
 
 		if (stance - 1 == 0) {
@@ -74,11 +76,13 @@ public class TooBeeController : MonoBehaviour {
         } else if (move < 0 && facingRight) {
             Flip ();
         }
-
-
 	}
 
-	public void Shoot(){
+	public void Shoot() {
+		if (mNumCans <= 0) {
+			return;
+		}
+
 		if (Time.time > nextFire) {
 			Vector3 mousePosition = Camera.main.ScreenToWorldPoint (Input.mousePosition);
 			//make sure mouse is not over player...this wont work for touch
@@ -92,6 +96,15 @@ public class TooBeeController : MonoBehaviour {
 			float distY = Mathf.Abs(mousePosition.y - transform.position.y);
 
 			if (distX > 4 || distY > 4) {
+				mNumCans--;
+				GameObject gameControlObject = GameObject.FindWithTag ("GameController");
+				GameController gameController = gameControlObject.GetComponent <GameController>();
+				gameController.numCansText.text = "x" + mNumCans;
+				if (mNumCans == 0) {
+					stance++;
+					mStanceLocked = true;
+				}
+
 				anim.Play("Throw");
 				GameObject clone = (GameObject) Instantiate(shot, startPosition, shotSpawn.rotation);
 				
@@ -160,7 +173,14 @@ public class TooBeeController : MonoBehaviour {
 		set { stance = value; }
 	}
 
-	void OnMouseDown(){	
+	void OnMouseDown() {	
+		changeStance();
+	}
+
+	private void changeStance() {
+		if (mStanceLocked) {
+			return;
+		}
 		//change stance
 		if(stance == numStances){
 			stance = MOVE_STANCE;
@@ -181,7 +201,7 @@ public class TooBeeController : MonoBehaviour {
         transform.position = new Vector3 (mStartingPosition.x, mStartingPosition.y, transform.position.z);
 	}
 
-	public void setNumCans(int _numCans) {
+	public void setNumCans(float _numCans) {
 		mNumCans = _numCans;
 	}
 }

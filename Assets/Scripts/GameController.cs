@@ -9,9 +9,9 @@ using System.Runtime.Serialization.Formatters.Binary;
 public class GameController : MonoBehaviour {
 
 	public AudioClip _deathSound;
-	public AudioClip deathSound;
 
 	public Text scoreText;
+	public Text numCansText;
 	//public static Timer scoreTimer;
 
 	//the three head game objects indicating player lives
@@ -29,7 +29,7 @@ public class GameController : MonoBehaviour {
 
 	//public string _winString;
 	public string _level;
-	public int _numCans;
+	public float _numCans = 3;
 
 	private bool gameOver;
 	//this is turned to true when the level is completed
@@ -52,6 +52,7 @@ public class GameController : MonoBehaviour {
 		_scoreFloat = 1000;
 		mInvulnerabilityCountDown = 30;
 		scoreText.text = "Score: " + _scoreFloat;
+		numCansText.text = "x" + _numCans;
 
 		GameObject playerObject = GameObject.FindWithTag ("Player");
 		GameObject invulnerabilityObject = GameObject.FindWithTag("Invulnerability");
@@ -283,7 +284,6 @@ public class GameController : MonoBehaviour {
 		if (mCurrentLevel == 0) {
 			mCurrentLevel++;
 		}
-
 
 		PlayerPrefs.SetInt("currentLevel", (mCurrentLevel + 1));
 	}
