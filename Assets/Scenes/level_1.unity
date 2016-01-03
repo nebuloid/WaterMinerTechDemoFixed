@@ -823,11 +823,11 @@ Prefab:
   m_IsPrefabParent: 0
 --- !u!1 &1122468046 stripped
 GameObject:
-  m_PrefabParentObject: {fileID: 134792, guid: e7324794b5799fe48897ac96875328bb, type: 2}
+  m_PrefabParentObject: {fileID: 145782, guid: e7324794b5799fe48897ac96875328bb, type: 2}
   m_PrefabInternal: {fileID: 1524511137}
 --- !u!114 &1171459895 stripped
 MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11486450, guid: e7324794b5799fe48897ac96875328bb,
+  m_PrefabParentObject: {fileID: 11429232, guid: e7324794b5799fe48897ac96875328bb,
     type: 2}
   m_PrefabInternal: {fileID: 1524511137}
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
@@ -960,7 +960,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22448086, guid: e7324794b5799fe48897ac96875328bb, type: 2}
       propertyPath: m_RootOrder
-      value: 22
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 22448086, guid: e7324794b5799fe48897ac96875328bb, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -1002,14 +1002,42 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 195740, guid: e7324794b5799fe48897ac96875328bb, type: 2}
-      propertyPath: m_Name
-      value: Canvas
-      objectReference: {fileID: 0}
     - target: {fileID: 22389390, guid: e7324794b5799fe48897ac96875328bb, type: 2}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1920452818}
+    - target: {fileID: 195740, guid: e7324794b5799fe48897ac96875328bb, type: 2}
+      propertyPath: m_Name
+      value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 11429232, guid: e7324794b5799fe48897ac96875328bb, type: 2}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11429232, guid: e7324794b5799fe48897ac96875328bb, type: 2}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11429232, guid: e7324794b5799fe48897ac96875328bb, type: 2}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11486450, guid: e7324794b5799fe48897ac96875328bb, type: 2}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11486450, guid: e7324794b5799fe48897ac96875328bb, type: 2}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11486450, guid: e7324794b5799fe48897ac96875328bb, type: 2}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11429232, guid: e7324794b5799fe48897ac96875328bb, type: 2}
+      propertyPath: m_Text
+      value: 'SCORE:'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e7324794b5799fe48897ac96875328bb, type: 2}
   m_IsPrefabParent: 0
