@@ -39,6 +39,7 @@ public class GameController : MonoBehaviour {
 	public Rect windowRect = new Rect(Screen.width/2, Screen.height/2, 540, 480);
 
     private TooBeeController playerController;
+	private GameObject waterGoal;
 	private InvulnerabilityColision invulnerabilityColision;
 
 	void Start ()
@@ -57,6 +58,7 @@ public class GameController : MonoBehaviour {
 		if (playerObject != null) {
 			playerController = playerObject.GetComponent <TooBeeController>(); //get this instance's own game controller connection
 		}
+
 		if (playerController == null) {
 			Debug.Log("Cannot find 'GameController' script"); //logging in case unable to find gamecontroller
 		}
@@ -64,8 +66,8 @@ public class GameController : MonoBehaviour {
 		//trying to connect invulnerabilityColision to this class
 		if (invulnerabilityObject != null) {
 			invulnerabilityColision = invulnerabilityObject.GetComponent <InvulnerabilityColision>(); //get this instance's own game controller connection
-
 		}
+
 		if (invulnerabilityColision == null) {
 			Debug.Log("Cannot find 'invulnerability' script"); //logging in case unable to find gamecontroller
 		}
@@ -76,6 +78,8 @@ public class GameController : MonoBehaviour {
         if (_lives < 3) {
             removeHeads(_lives);
         }
+
+		waterGoal = GameObject.FindWithTag ("Water");
 	}
 
 	void Update (){
@@ -106,6 +110,19 @@ public class GameController : MonoBehaviour {
 				playerController.Shoot();
 			}
         }
+
+		if (waterGoal == null) {
+			return;
+		}
+
+		if (waterGoal.transform.position.x > playerController.gameObject.transform.position.x - 1 
+		    && waterGoal.transform.position.x < playerController.gameObject.transform.position.x + 1
+		    && waterGoal.transform.position.y > playerController.gameObject.transform.position.y - 1
+		    && waterGoal.transform.position.y < playerController.gameObject.transform.position.y + 1) {
+			Debug.Log("waterHIT"); //logging in case unable to find gamecontroller 
+			//player dies
+			Victory ();
+		}
     }
 	
 	public void Victory() {

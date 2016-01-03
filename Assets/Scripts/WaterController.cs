@@ -17,7 +17,7 @@ public class WaterController : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter(Collider other){
-		
+		Debug.Log("waterHIT"); //logging in case unable to find gamecontroller
 		if (other.tag == "Player") { 
 			//player dies
 			gameController.Victory ();
