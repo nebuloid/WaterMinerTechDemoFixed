@@ -5,9 +5,9 @@ using System.Diagnostics;
 public class GroundController : MonoBehaviour {
 	public Sprite[] _sprites;
 	public float _framesPerSecond;
-
     private Animator playerAnimator;
 	private SpriteRenderer spriteRenderer;
+	//private BoxCollider boxCol;
 	private bool touched = false;
 	private bool grounded = false;
 	private Stopwatch timer;
@@ -18,7 +18,6 @@ public class GroundController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
 		GameObject gameControlObject = GameObject.FindWithTag ("GameController");
 		if (gameControlObject != null) {
 			gameController = gameControlObject.GetComponent <GameController>(); //get this instance's own game controller connection
@@ -35,7 +34,7 @@ public class GroundController : MonoBehaviour {
 		playerAnimator = player.GetComponent<Animator>();
 		timer = new Stopwatch ();
 		spriteRenderer = GetComponent<Renderer>() as SpriteRenderer;
-		//UnityEngine.Debug.Log(spriteRenderer.bounds.extents.x);
+		//boxCol = GetComponent<BoxCollider>() as BoxCollider;
 	}
 	
 	// Update is called once per frame
@@ -73,7 +72,7 @@ public class GroundController : MonoBehaviour {
 	}
 	
 	public bool PlayerDistance(){
-		if(Vector2.Distance(player.transform.position, transform.position) < 5.7f){
+		if(Vector2.Distance(new Vector2(player.transform.position.x, player.transform.position.y), new Vector2(transform.position.x, transform.position.y)) < 5.7f){
 			return true;
 		}else{
 			return false;
