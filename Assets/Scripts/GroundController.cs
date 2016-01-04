@@ -15,6 +15,7 @@ public class GroundController : MonoBehaviour {
 	private GameObject player; // player object for moving 
 	private TooBeeController playerController;
 	private GameController gameController;
+	public Sprite[] _rockBlocks;
 
 	// Use this for initialization
 	void Start () {
