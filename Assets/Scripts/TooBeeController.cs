@@ -101,7 +101,7 @@ public class TooBeeController : MonoBehaviour {
 				GameController gameController = gameControlObject.GetComponent <GameController>();
 				gameController.numCansText.text = "x" + mNumCans;
 				if (mNumCans == 0) {
-					stance++;
+					changeStance();
 					mStanceLocked = true;
 				}
 
@@ -181,6 +181,7 @@ public class TooBeeController : MonoBehaviour {
 		if (mStanceLocked) {
 			return;
 		}
+		
 		//change stance
 		if(stance == numStances){
 			stance = MOVE_STANCE;
