@@ -51,7 +51,7 @@ public class GameController : MonoBehaviour {
 		Load ();
 		_scoreFloat = 1000;
 		mInvulnerabilityCountDown = 30;
-		scoreText.text = _scoreFloat;
+		scoreText.text = "" + _scoreFloat;
 		numCansText.text = "x" + _numCans;
 
 		GameObject playerObject = GameObject.FindWithTag ("Player");
@@ -142,7 +142,7 @@ public class GameController : MonoBehaviour {
 	}
 
 	void UpdateScore() {
-		scoreText.text = _scoreInt;
+		scoreText.text = "" + _scoreFloat;
 	}
 
 	public void AddScore(int newScoreValue) {
@@ -184,7 +184,7 @@ public class GameController : MonoBehaviour {
 		if (_scoreFloat < 0) {
 			_scoreFloat = 0;
 		}
-		scoreText.text = _scoreInt;
+		scoreText.text = "" + _scoreFloat;
 	}
 
     private void GameOver() {
