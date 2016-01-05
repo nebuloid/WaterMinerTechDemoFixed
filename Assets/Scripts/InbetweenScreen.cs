@@ -11,6 +11,7 @@ public class InbetweenScreen : MonoBehaviour
 	public Text levelScoreText;
 	public Text totalScoreText;
 	public Text highScoreText;
+	public Sprite[] infoPanels;
 
 	void Start ()
 	{
