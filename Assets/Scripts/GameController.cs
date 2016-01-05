@@ -129,16 +129,14 @@ public class GameController : MonoBehaviour {
 	
 	public void Victory() {
 		Save ();
+		int curLev = PlayerPrefs.GetInt ("currentLevel");
+		if (curLev == 3) {
+			Application.LoadLevel ("Tutorial2"); 
+		} else {
+			Application.LoadLevel ("inbetween");
+		}
 
-		Application.LoadLevel ("inbetween"); // loads a new level (right now it is set to load the same over and over
 		return;
-		//isWindowShown = true;
-		/* 
-		 * won equals true is now called 
-		 * if the user clicks the 'next level'
-		 * button in the gui text box
-		 */
-		//won = true;
 	}
 
 	void UpdateScore() {
