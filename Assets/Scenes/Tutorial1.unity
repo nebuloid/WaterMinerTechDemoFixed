@@ -180,11 +180,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 434366, guid: 6af6798ee7fd7a749b9ef2698097d601, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.00287974
+      value: -.100000001
       objectReference: {fileID: 0}
     - target: {fileID: 434366, guid: 6af6798ee7fd7a749b9ef2698097d601, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -.692133904
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 434366, guid: 6af6798ee7fd7a749b9ef2698097d601, type: 2}
       propertyPath: m_LocalPosition.z
@@ -212,46 +212,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 154208, guid: 6af6798ee7fd7a749b9ef2698097d601, type: 2}
       propertyPath: m_Name
-      value: tooBee
+      value: tooBeeTutorial
       objectReference: {fileID: 0}
-    - target: {fileID: 9590542, guid: 6af6798ee7fd7a749b9ef2698097d601, type: 2}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: a09b28aad348b9c4b8fa132afb3d1d0a, type: 2}
-    - target: {fileID: 434366, guid: 6af6798ee7fd7a749b9ef2698097d601, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 434366, guid: 6af6798ee7fd7a749b9ef2698097d601, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 21284306, guid: 6af6798ee7fd7a749b9ef2698097d601, type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 21248944, guid: 6af6798ee7fd7a749b9ef2698097d601, type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 13601824, guid: 6af6798ee7fd7a749b9ef2698097d601, type: 2}
-      propertyPath: m_Radius
-      value: .5
-      objectReference: {fileID: 0}
-    - target: {fileID: 13601824, guid: 6af6798ee7fd7a749b9ef2698097d601, type: 2}
-      propertyPath: m_Height
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 13601824, guid: 6af6798ee7fd7a749b9ef2698097d601, type: 2}
-      propertyPath: m_Center.y
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 11423816, guid: 6af6798ee7fd7a749b9ef2698097d601, type: 2}
-    - {fileID: 8205484, guid: 6af6798ee7fd7a749b9ef2698097d601, type: 2}
-    - {fileID: 13601824, guid: 6af6798ee7fd7a749b9ef2698097d601, type: 2}
-    - {fileID: 5408482, guid: 6af6798ee7fd7a749b9ef2698097d601, type: 2}
-    - {fileID: 21288020, guid: 6af6798ee7fd7a749b9ef2698097d601, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6af6798ee7fd7a749b9ef2698097d601, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &538525482
@@ -288,7 +251,9 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -416,7 +381,9 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -562,7 +529,9 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -714,7 +683,9 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -863,7 +834,9 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -917,7 +890,9 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
