@@ -3,7 +3,7 @@ using System.Collections;
 
 public class NewGameButton : MonoBehaviour {
 	
-	private string _sceneID = "level_1";
+	private string _sceneID = "Tutorial1";
 	
 	// Use this for initialization
 	void Start () {

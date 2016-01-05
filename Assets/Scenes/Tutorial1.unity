@@ -234,7 +234,24 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 13601824, guid: 6af6798ee7fd7a749b9ef2698097d601, type: 2}
+      propertyPath: m_Radius
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 13601824, guid: 6af6798ee7fd7a749b9ef2698097d601, type: 2}
+      propertyPath: m_Height
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 13601824, guid: 6af6798ee7fd7a749b9ef2698097d601, type: 2}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 11423816, guid: 6af6798ee7fd7a749b9ef2698097d601, type: 2}
+    - {fileID: 8205484, guid: 6af6798ee7fd7a749b9ef2698097d601, type: 2}
+    - {fileID: 13601824, guid: 6af6798ee7fd7a749b9ef2698097d601, type: 2}
+    - {fileID: 5408482, guid: 6af6798ee7fd7a749b9ef2698097d601, type: 2}
+    - {fileID: 21288020, guid: 6af6798ee7fd7a749b9ef2698097d601, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 6af6798ee7fd7a749b9ef2698097d601, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &538525482
@@ -725,9 +742,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1488356767}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: b131b1d3426d34594a54d649f4b9a224, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _sceneID: level_1
 --- !u!82 &1488356771
 AudioSource:
   m_ObjectHideFlags: 0
