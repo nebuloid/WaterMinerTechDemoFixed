@@ -16,6 +16,7 @@ public class GroundController : MonoBehaviour {
 	private TooBeeController playerController;
 	private GameController gameController;
 	public Sprite[] _rockBlocks;
+	public bool hasRockBlock = false;
 
 	// Use this for initialization
 	void Start () {
