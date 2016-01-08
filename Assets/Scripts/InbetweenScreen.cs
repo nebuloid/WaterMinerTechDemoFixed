@@ -20,13 +20,15 @@ public class InbetweenScreen : MonoBehaviour
 		totalScoreText.text = PlayerPrefs.GetInt ("totalScore").ToString ();
 		
 		int currentLev = PlayerPrefs.GetInt ("currentLevel") - 2;
-		if (currentLev > 9) {
-			currentLev -= 6;
-		} else if (currentLev > 18) {
-			currentLev -= 15;
-		} else if (currentLev > 27) {
+		Debug.Log ("level = " + currentLev);
+		if (currentLev > 25) {
 			currentLev -= 24;
+		} else if (currentLev > 17) {
+			currentLev -= 16;
+		} else if (currentLev > 9) {
+			currentLev -= 8;
 		}
+		Debug.Log ("level minust = " + currentLev);
 		infoHolder.GetComponent<SpriteRenderer>().sprite = infoPanels[currentLev];
 	}
 }
