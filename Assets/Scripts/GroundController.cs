@@ -17,6 +17,7 @@ public class GroundController : MonoBehaviour {
 	private GameController gameController;
 	public Sprite[] _rockBlocks;
 	public bool hasRockBlock = false;
+	private bool cantBeHurt = false;
 
 	// Use this for initialization
 	void Start () {
@@ -57,8 +58,24 @@ public class GroundController : MonoBehaviour {
 					int index = (int)(0.01f * timer.ElapsedMilliseconds);
 					//UnityEngine.Debug.Log(boxCol);
 					if(index == _sprites.Length){
-						Destroy(gameObject);
-					}else if(index < _sprites.Length){
+						if (!hasRockBlock) {
+							Destroy(gameObject);
+						} else {
+							float rnd = Random.value;
+							int rndInt;
+							if (rnd > .66f) {
+								rndInt = 0;
+							} else if (rnd > .33f) {
+								rndInt = 1;
+							} else {
+								rndInt = 2;
+							}
+							if (!cantBeHurt) {
+								spriteRenderer.sprite = _rockBlocks[rndInt];
+								cantBeHurt = true;
+							}
+						}
+					} else if (index < _sprites.Length){
 						spriteRenderer.sprite = _sprites [index];
 					}
 				}
@@ -67,7 +84,7 @@ public class GroundController : MonoBehaviour {
 				if(timer.IsRunning){
 					timer.Stop();
 					timer.Reset();
-					spriteRenderer.sprite = _sprites [0];
+					//spriteRenderer.sprite = _sprites [0];
 				}
 			}
 		}
@@ -96,8 +113,13 @@ public class GroundController : MonoBehaviour {
 			if (playerAnimator != null)
 				playerAnimator.SetTrigger("Swing");
 
-			if (timer != null)
+			if (cantBeHurt) {
+				return;
+			}
+
+			if (timer != null) {
 				timer.Start();
+			}
 
 			touched = true;
 		} 		

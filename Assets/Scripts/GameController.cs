@@ -132,6 +132,9 @@ public class GameController : MonoBehaviour {
 		int curLev = PlayerPrefs.GetInt ("currentLevel");
 		if (curLev == 3) {
 			Application.LoadLevel ("Tutorial2"); 
+		} else if (curLev == 30) {
+			PlayerPrefs.SetInt("currentLevel", 0);
+			Application.LoadLevel ("WinGame");
 		} else {
 			Application.LoadLevel ("inbetween");
 		}
