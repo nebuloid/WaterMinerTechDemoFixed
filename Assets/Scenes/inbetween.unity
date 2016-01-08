@@ -257,7 +257,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 112.699997, y: 214.899994}
+  m_AnchoredPosition: {x: 103.800003, y: 196.490005}
   m_SizeDelta: {x: 162.399994, y: 44.9000015}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &621921742
@@ -344,7 +344,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 112.699997, y: 166.5}
+  m_AnchoredPosition: {x: 103.800003, y: 151.800003}
   m_SizeDelta: {x: 162.399994, y: 44.9000015}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &648250297
@@ -576,7 +576,7 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 500}
-  m_ScreenMatchMode: 0
+  m_ScreenMatchMode: 2
   m_MatchWidthOrHeight: .486000001
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -651,7 +651,7 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 112.699936, y: 113.099998}
+  m_AnchoredPosition: {x: 103.800003, y: 104}
   m_SizeDelta: {x: 162.399994, y: 47}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1445104403
@@ -1094,10 +1094,10 @@ MonoBehaviour:
   totalScoreText: {fileID: 648250297}
   highScoreText: {fileID: 1445104403}
   infoPanels:
-  - {fileID: 21300000, guid: 8021b0e5605e46a49aa343905b32256d, type: 3}
-  - {fileID: 21300000, guid: d1c72977bb0b4154c981d5af86a8f9ce, type: 3}
-  - {fileID: 21300000, guid: 3401838d0fcec204c949c326d89f579c, type: 3}
-  - {fileID: 21300000, guid: 653a4a3c20c4da645a01b10ec24688d9, type: 3}
+  - {fileID: 21300000, guid: 50a2c86da668437429462d096661e5ef, type: 3}
+  - {fileID: 21300000, guid: 8d7dd7f90c7fcc543a88010fc0039e0f, type: 3}
+  - {fileID: 21300000, guid: da2d5597e97f77249a0aa0c2503d332f, type: 3}
+  - {fileID: 21300000, guid: a464a8e22833510449f5498c81c4520f, type: 3}
   - {fileID: 21300000, guid: ea6ce4f76fd1b764aa91420f72f4f4fb, type: 3}
   - {fileID: 21300000, guid: d2b37ea8539f3c24c95391697ef7cdb8, type: 3}
   - {fileID: 21300000, guid: cf9c523a08f92e64ca19a420cca48945, type: 3}
