@@ -26,9 +26,7 @@ public class GameController : MonoBehaviour {
 	private int _scoreInt;
 	private int mHighScore;
 	private float mInvulnerabilityCountDown;
-
-	//public string _winString;
-	public string _level;
+	
 	public float _numCans = 3;
 
 	private bool gameOver;
@@ -82,10 +80,15 @@ public class GameController : MonoBehaviour {
 
 		waterGoal = GameObject.FindWithTag ("Water");
 		playerController.setNumCans(_numCans);
+		playerController.GetComponent<ParticleSystem>().Stop();
 	}
 
 	void Update() {
-		isInvulnerable = invulnerabilityColision.getIsInvulnerable();
+		if (invulnerabilityColision) {
+			isInvulnerable = invulnerabilityColision.getIsInvulnerable ();
+		} else {
+			isInvulnerable = false;
+		}
 		//if the level isn't finished then decrement the score
 		//if (!isWindowShown) {
 		DecrementScore();
@@ -224,10 +227,12 @@ public class GameController : MonoBehaviour {
 
 	private void InvulnerablilityCountdown() {
 		mInvulnerabilityCountDown -= Time.deltaTime;
-		if(mInvulnerabilityCountDown <= 0) {
-			Debug.Log("Invulnerable time is finished");
+		if (mInvulnerabilityCountDown <= 0) {
+			Debug.Log ("Invulnerable time is finished");
 			isInvulnerable = false;
-			invulnerabilityColision.setIsInvulnerable(isInvulnerable);
+			if (invulnerabilityColision) {
+				invulnerabilityColision.setIsInvulnerable (isInvulnerable);
+			}
 			mInvulnerabilityCountDown = 30;
 		}
 		//Debug.Log ("Time is Ticking away, " + mInvulnerabilityCountDown);

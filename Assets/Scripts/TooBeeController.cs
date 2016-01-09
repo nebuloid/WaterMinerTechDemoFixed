@@ -52,6 +52,9 @@ public class TooBeeController : MonoBehaviour {
 		//toobee shots
 		direction = new Vector2 (0.0f, 0.0f);
         mStartingPosition = new Vector2 (transform.position.x, transform.position.y);
+		if (mNumCans == 0) {
+			mStanceLocked = true;
+		}
 	}
 	
 	// Update is called once per frame
