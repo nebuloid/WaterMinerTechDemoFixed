@@ -7,7 +7,7 @@ public class FollowPlayerController : MonoBehaviour {
 	Transform target; 
 
 	//move speed 
-	public int moveSpeed = 3; 
+	public float moveSpeed = 3; 
 	Animator anim;
 
 	public bool chasing = true;
@@ -34,7 +34,8 @@ public class FollowPlayerController : MonoBehaviour {
 		//rotate to look at the player 
 		if (chasing) {
 			myTransform.rotation = Quaternion.Slerp (myTransform.rotation, 
-			Quaternion.LookRotation (target.position - myTransform.position), rotationSpeed * Time.deltaTime);
+								   Quaternion.LookRotation (target.position - myTransform.position),
+			                       rotationSpeed * Time.deltaTime);
 			//move towards the player
 			myTransform.position += myTransform.forward * moveSpeed * Time.deltaTime;
 			anim.SetFloat ("Speed", moveSpeed);
