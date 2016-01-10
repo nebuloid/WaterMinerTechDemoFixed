@@ -219,6 +219,9 @@ public class TooBeeController : MonoBehaviour {
 		mIsInvulnerable = isInvulnerable;
 		if (mIsInvulnerable) {
 			GetComponent<ParticleSystem>().Play();
+			GameObject gameControlObject = GameObject.FindWithTag ("GameController");
+			GameController gameController = gameControlObject.GetComponent <GameController>();
+			gameController.setInvulnerabilityCountDown(10f);
 			Debug.Log("play");
 		} else {
 			GetComponent<ParticleSystem>().Stop();

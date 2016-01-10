@@ -26,6 +26,9 @@ public class GameController : MonoBehaviour {
 	private int _scoreInt;
 	private int mHighScore;
 	private float mInvulnerabilityCountDown;
+	public void setInvulnerabilityCountDown(float _count) {
+		mInvulnerabilityCountDown = 10;
+	}
 	
 	public float _numCans = 3;
 
