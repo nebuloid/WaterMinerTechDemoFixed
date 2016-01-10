@@ -42,7 +42,7 @@ public class CameraController : MonoBehaviour {
 	void FixedUpdate () {
 		bool dead = mGameController.GameOverBool;
 		if(! dead){
-			if (_cameraTarget.transform.position.y > -24.75) {
+			if (_cameraTarget.transform.position.y > -25.75) {
 				mCameraTransform.position = new Vector3(mCameraTransform.position.x, 
 				                                        Mathf.SmoothDamp(mCameraTransform.position.y, _cameraTarget.transform.position.y, ref _velocity.y, _smoothTime), 
 			                                       		mCameraTransform.position.z);

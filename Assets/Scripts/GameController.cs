@@ -48,7 +48,7 @@ public class GameController : MonoBehaviour {
 		//isWindowShown = false;
 		Load ();
 		_scoreFloat = 1000;
-		mInvulnerabilityCountDown = 30;
+		mInvulnerabilityCountDown = 10;
 		scoreText.text = Mathf.RoundToInt(_scoreFloat).ToString();
 		numCansText.text = "x" + _numCans;
 
@@ -84,8 +84,8 @@ public class GameController : MonoBehaviour {
 	}
 
 	void Update() {
-		if (invulnerabilityColision) {
-			isInvulnerable = invulnerabilityColision.getIsInvulnerable ();
+		if (playerController) {
+			isInvulnerable = playerController.getIsInvulnerable ();
 		} else {
 			isInvulnerable = false;
 		}
@@ -230,10 +230,10 @@ public class GameController : MonoBehaviour {
 		if (mInvulnerabilityCountDown <= 0) {
 			Debug.Log ("Invulnerable time is finished");
 			isInvulnerable = false;
-			if (invulnerabilityColision) {
-				invulnerabilityColision.setIsInvulnerable (isInvulnerable);
+			if (playerController != null) {
+				playerController.setIsInvulnerable (isInvulnerable);
 			}
-			mInvulnerabilityCountDown = 30;
+			mInvulnerabilityCountDown = 10;
 		}
 		//Debug.Log ("Time is Ticking away, " + mInvulnerabilityCountDown);
 	}

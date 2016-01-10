@@ -29,6 +29,7 @@ public class TooBeeController : MonoBehaviour {
 	public Vector2 direction;
 	public float nextFire;
 	public AudioClip shotSound;
+	private bool mIsInvulnerable = false;
 
 	//change stance
 	public int stance = 1;
@@ -207,5 +208,20 @@ public class TooBeeController : MonoBehaviour {
 
 	public void setNumCans(float _numCans) {
 		mNumCans = _numCans;
+	}
+
+	public void setIsInvulnerable(bool isInvulnerable) {
+		mIsInvulnerable = isInvulnerable;
+		if (mIsInvulnerable) {
+			GetComponent<ParticleSystem>().Play();
+			Debug.Log("play");
+		} else {
+			GetComponent<ParticleSystem>().Stop();
+			Debug.Log("stop");
+		}
+	}
+
+	public bool getIsInvulnerable() {
+		return mIsInvulnerable;
 	}
 }
