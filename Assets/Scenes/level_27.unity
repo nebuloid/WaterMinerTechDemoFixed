@@ -405,6 +405,10 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11430878, guid: add02451debb6401ba3d9f696020df31, type: 2}
+      propertyPath: moveSpeed
+      value: .800000012
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: add02451debb6401ba3d9f696020df31, type: 2}
   m_IsPrefabParent: 0
@@ -605,6 +609,10 @@ Prefab:
     - target: {fileID: 13693726, guid: add02451debb6401ba3d9f696020df31, type: 2}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11430878, guid: add02451debb6401ba3d9f696020df31, type: 2}
+      propertyPath: moveSpeed
+      value: .119999997
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: add02451debb6401ba3d9f696020df31, type: 2}
@@ -867,6 +875,10 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11430878, guid: add02451debb6401ba3d9f696020df31, type: 2}
+      propertyPath: moveSpeed
+      value: 1.10000002
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: add02451debb6401ba3d9f696020df31, type: 2}
   m_IsPrefabParent: 0
@@ -996,6 +1008,10 @@ Prefab:
     - target: {fileID: 13693726, guid: add02451debb6401ba3d9f696020df31, type: 2}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11430878, guid: add02451debb6401ba3d9f696020df31, type: 2}
+      propertyPath: moveSpeed
+      value: .100000001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: add02451debb6401ba3d9f696020df31, type: 2}
@@ -3458,6 +3474,10 @@ Prefab:
     - target: {fileID: 13693726, guid: add02451debb6401ba3d9f696020df31, type: 2}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11430878, guid: add02451debb6401ba3d9f696020df31, type: 2}
+      propertyPath: moveSpeed
+      value: .899999976
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: add02451debb6401ba3d9f696020df31, type: 2}
