@@ -809,7 +809,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 455640, guid: ab4eba1bc18c920478edf624e5ca355f, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536748, guid: ab4eba1bc18c920478edf624e5ca355f, type: 2}
+      propertyPath: m_Size.y
+      value: .550000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 455638, guid: ab4eba1bc18c920478edf624e5ca355f, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536748, guid: ab4eba1bc18c920478edf624e5ca355f, type: 2}
+      propertyPath: m_Center.y
+      value: .0700000003
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ab4eba1bc18c920478edf624e5ca355f, type: 2}

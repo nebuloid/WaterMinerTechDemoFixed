@@ -26,8 +26,10 @@ public class TooBeeController : MonoBehaviour {
 	public GameObject shot;
 	public Transform shotSpawn;
 	public float fireRate;
+	private float moveRate = 0.15f;
 	public Vector2 direction;
 	public float nextFire;
+	public float nextMove;
 	public AudioClip shotSound;
 	private bool mIsInvulnerable = false;
 
@@ -94,6 +96,7 @@ public class TooBeeController : MonoBehaviour {
 			direction = new Vector2 (mousePosition.x - transform.position.x, mousePosition.y - transform.position.y).normalized;
 
 			nextFire = Time.time + fireRate;
+			nextMove = Time.time + moveRate;
 			Vector3 startPosition = new Vector3 (shotSpawn.position.x, shotSpawn.position.y, -7.5f);
 
 			float distX = Mathf.Abs(mousePosition.x - transform.position.x);
@@ -104,26 +107,28 @@ public class TooBeeController : MonoBehaviour {
 				GameObject gameControlObject = GameObject.FindWithTag ("GameController");
 				GameController gameController = gameControlObject.GetComponent <GameController>();
 				gameController.numCansText.text = "x" + mNumCans;
-				if (mNumCans == 0) {
-					changeStance();
-					mStanceLocked = true;
-				}
 
 				anim.Play("Throw");
 				GameObject clone = (GameObject) Instantiate(shot, startPosition, shotSpawn.rotation);
 				
 				clone.GetComponent<Rigidbody>().AddForce (direction * 1000.0f);
 				GetComponent<AudioSource>().clip = shotSound;
-				GetComponent<AudioSource>().Play();			
+				GetComponent<AudioSource>().Play();	
+				if (mNumCans == 0) {
+					changeStance();
+					mStanceLocked = true;
+				}
 			}
 		}
 	}
 
 	public void setTargetPoint(Vector3 point) {
-		mTargetPoint = point;
-		moving = true;
-		flipOk = true;
-		mFirstTouch = true;
+		if (Time.time > nextMove) {
+			mTargetPoint = point;
+			moving = true;
+			flipOk = true;
+			mFirstTouch = true;
+		}
 	}
 
 	public void MoveMe(){
