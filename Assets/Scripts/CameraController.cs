@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class CameraController : MonoBehaviour {
-    private const double IDEAL_SCREEN_RATIO = 1.5;
+    private const double IDEAL_SCREEN_RATIO = 1.6;
 
 	public GameObject _cameraTarget; // object to look at or follow
 	public float _smoothTime = 0.1f;    // time for dampen
@@ -28,9 +28,7 @@ public class CameraController : MonoBehaviour {
 		mScreenRatio = (float) Screen.width / (float) Screen.height;
 		if (mScreenRatio > 1.6) {
 			ResizeScreenMore();
-		}
-
-		if (mScreenRatio < 1.4) {
+		} else {
 			ResizeScreenLess();
 		}
 	}
