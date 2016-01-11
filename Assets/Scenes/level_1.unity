@@ -492,10 +492,6 @@ Prefab:
       propertyPath: _lifeHead3
       value: 
       objectReference: {fileID: 108999674}
-    - target: {fileID: 9504574, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 172c8dd34624bb84c9897bb2d207946f, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
   m_IsPrefabParent: 0
@@ -512,7 +508,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 457488, guid: 0d3cc020ee98323408aa7084f6b93f51, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -9.89940643
+      value: -10.6199999
       objectReference: {fileID: 0}
     - target: {fileID: 457488, guid: 0d3cc020ee98323408aa7084f6b93f51, type: 2}
       propertyPath: m_LocalPosition.z
@@ -536,7 +532,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 457488, guid: 0d3cc020ee98323408aa7084f6b93f51, type: 2}
       propertyPath: m_RootOrder
-      value: 16
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 102406, guid: 0d3cc020ee98323408aa7084f6b93f51, type: 2}
       propertyPath: m_Name

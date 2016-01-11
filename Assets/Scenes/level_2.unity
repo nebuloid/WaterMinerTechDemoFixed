@@ -446,197 +446,33 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 1894450030}
     - target: {fileID: 11400000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
-      propertyPath: winText
+      propertyPath: numCansText
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
-      propertyPath: gameOverText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
-      propertyPath: winString
-      value: YOU WON!
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
-      propertyPath: lives
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
-      propertyPath: livesText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
-      propertyPath: lifeHead1
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
-      propertyPath: lifeHead2
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
-      propertyPath: lifehead3
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
-      propertyPath: lifeHead3
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
-      propertyPath: _winText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
-      propertyPath: _gameOverText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
-      propertyPath: _deathSound
-      value: 
-      objectReference: {fileID: 8300000, guid: a019ae3af8e864616b85773c509f5285, type: 3}
-    - target: {fileID: 11400000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
-      propertyPath: _lifeHead3
-      value: 
-      objectReference: {fileID: 1894450031}
-    - target: {fileID: 11400000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
-      propertyPath: _lifeHead2
-      value: 
-      objectReference: {fileID: 1894450032}
+      objectReference: {fileID: 1894450034}
     - target: {fileID: 11400000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
       propertyPath: _lifeHead1
       value: 
       objectReference: {fileID: 1894450033}
     - target: {fileID: 11400000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
-      propertyPath: _lives
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
-      propertyPath: _player
+      propertyPath: _lifeHead2
       value: 
-      objectReference: {fileID: 1958923547}
+      objectReference: {fileID: 1894450032}
     - target: {fileID: 11400000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
-      propertyPath: _winString
-      value: YOU WIN!
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
-      propertyPath: _level
-      value: level_2
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
-      propertyPath: nextButton
+      propertyPath: _lifeHead3
       value: 
-      objectReference: {fileID: 2800000, guid: 418ab5c27d3054eb89959d9c715e00c9, type: 3}
-    - target: {fileID: 11400000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
-      propertyPath: _numCans
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
-      propertyPath: numCansText
-      value: 
-      objectReference: {fileID: 1894450034}
-    m_RemovedComponents:
-    - {fileID: 8200000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
+      objectReference: {fileID: 1894450031}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &974193976 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
-  m_PrefabInternal: {fileID: 835242045}
---- !u!82 &974193979
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 974193976}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7b04c59dd84f14039b601e1abbe7b884, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: .300000012
-  m_Pitch: 1
-  Loop: 1
-  Mute: 1
-  Spatialize: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
---- !u!95 &974193980
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 974193976}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 172c8dd34624bb84c9897bb2d207946f, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &1024348791
 Prefab:
   m_ObjectHideFlags: 0
