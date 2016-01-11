@@ -18,9 +18,7 @@ public class GameController : MonoBehaviour {
 	public GameObject _lifeHead1;
 	public GameObject _lifeHead2;
 	public GameObject _lifeHead3;
-
-	public Texture nextButton;
-
+	
     public int _lives;
 	private float _scoreFloat;
 	private int _scoreInt;
