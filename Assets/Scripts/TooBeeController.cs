@@ -102,7 +102,7 @@ public class TooBeeController : MonoBehaviour {
 			float distX = Mathf.Abs(mousePosition.x - transform.position.x);
 			float distY = Mathf.Abs(mousePosition.y - transform.position.y);
 
-			if (distX > 4 || distY > 4) {
+			if (distX > 1.5 || distY > 1.5) {
 				mNumCans--;
 				GameObject gameControlObject = GameObject.FindWithTag ("GameController");
 				GameController gameController = gameControlObject.GetComponent <GameController>();
