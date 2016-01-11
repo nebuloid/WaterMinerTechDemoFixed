@@ -201,14 +201,15 @@ public class TooBeeController : MonoBehaviour {
 	}
 
 	public void Die(){
-        // this takes the starting point saved at the beginning of level and sets the player transform's position to it
-        // transforms handle manipulating prefabs and sprites and other game objects
-        // the 3 coordinates are x for horizontal position, y for vertical, and z for depth position
-        // we don't care about depth, so I set it to whatever it currently is
-        // the z positions on stuff in the scene and also prefabs DOES matter though...
-        // as it controls what is visually in the front of the scene and what is background
-        // there can be as many layers as different z positions entered into the scene and the prefabs
         transform.position = new Vector3 (mStartingPosition.x, mStartingPosition.y, transform.position.z);
+		setTargetPoint (transform.position);
+		stance = MOVE_STANCE;
+		GetComponent<Animator> ().SetInteger ("Stance", stance - 1);
+		if (mNumCans > 0) {
+			mStanceLocked = false;
+		} else {
+			mStanceLocked = true;
+		}
 	}
 
 	public void setNumCans(float _numCans) {
