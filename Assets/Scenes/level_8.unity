@@ -452,11 +452,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 440408, guid: da401ff7cd8f4ae4ab40643a0a8c8d5f, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 103080, guid: da401ff7cd8f4ae4ab40643a0a8c8d5f, type: 2}
       propertyPath: m_Name
       value: Directional light (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 10815260, guid: da401ff7cd8f4ae4ab40643a0a8c8d5f, type: 2}
+      propertyPath: m_Intensity
+      value: 1.39999998
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: da401ff7cd8f4ae4ab40643a0a8c8d5f, type: 2}
@@ -3311,11 +3315,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 496180, guid: 0f937f25e248c764c8e6b896390ee482, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 182072, guid: 0f937f25e248c764c8e6b896390ee482, type: 2}
       propertyPath: m_Name
       value: Directional light
+      objectReference: {fileID: 0}
+    - target: {fileID: 10896274, guid: 0f937f25e248c764c8e6b896390ee482, type: 2}
+      propertyPath: m_Intensity
+      value: 1.39999998
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f937f25e248c764c8e6b896390ee482, type: 2}
