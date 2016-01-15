@@ -453,7 +453,7 @@ Prefab:
     - target: {fileID: 11400000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
       propertyPath: scoreText
       value: 
-      objectReference: {fileID: 1894450030}
+      objectReference: {fileID: 1894450035}
     - target: {fileID: 11400000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
       propertyPath: numCansText
       value: 
@@ -470,6 +470,10 @@ Prefab:
       propertyPath: _lifeHead3
       value: 
       objectReference: {fileID: 1894450031}
+    - target: {fileID: 11400000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
+      propertyPath: levelText
+      value: 
+      objectReference: {fileID: 1894450030}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
   m_IsPrefabParent: 0
@@ -3043,6 +3047,12 @@ GameObject:
 --- !u!114 &1894450034 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11486450, guid: e7324794b5799fe48897ac96875328bb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1894450029}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+--- !u!114 &1894450035 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11491494, guid: e7324794b5799fe48897ac96875328bb,
     type: 2}
   m_PrefabInternal: {fileID: 1894450029}
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}

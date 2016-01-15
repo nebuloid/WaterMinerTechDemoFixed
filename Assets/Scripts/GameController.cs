@@ -12,14 +12,16 @@ public class GameController : MonoBehaviour {
 
 	public Text scoreText;
 	public Text numCansText;
+	public Text levelText;
 	//public static Timer scoreTimer;
 
 	//the three head game objects indicating player lives
 	public GameObject _lifeHead1;
 	public GameObject _lifeHead2;
 	public GameObject _lifeHead3;
-	
-    public int _lives;
+
+	public int extraLife = 0;
+    private int _lives;
 	private float _scoreFloat;
 	private int _scoreInt;
 	private int mHighScore;
@@ -45,6 +47,11 @@ public class GameController : MonoBehaviour {
 	void Start() {
 		PlayerPrefs.SetInt ("levelScore", 0);
 		mCurrentLevel = PlayerPrefs.GetInt ("currentLevel");
+		if (mCurrentLevel > 0) {
+			levelText.text = "Level " + mCurrentLevel.ToString ();
+		} else {
+			levelText.text = "Level 1";
+		}
 		gameOver = false;
 		//isWindowShown = false;
 		Load ();
@@ -75,6 +82,15 @@ public class GameController : MonoBehaviour {
 		UpdateScore();
 
         _lives = PlayerPrefs.GetInt("lives");
+
+		if (extraLife > 0) {
+			_lives += extraLife;
+		}
+
+		if (_lives > 3) {
+			_lives = 3;
+		}
+
         if (_lives < 3) {
             removeHeads(_lives);
         }

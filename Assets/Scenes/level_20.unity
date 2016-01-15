@@ -453,7 +453,7 @@ Prefab:
     - target: {fileID: 11400000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
       propertyPath: scoreText
       value: 
-      objectReference: {fileID: 2129230224}
+      objectReference: {fileID: 2129230227}
     - target: {fileID: 11400000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
       propertyPath: winText
       value: 
@@ -546,6 +546,14 @@ Prefab:
       propertyPath: numCansText
       value: 
       objectReference: {fileID: 2129230226}
+    - target: {fileID: 11400000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
+      propertyPath: extraLife
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
+      propertyPath: levelText
+      value: 
+      objectReference: {fileID: 2129230224}
     m_RemovedComponents:
     - {fileID: 8200000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 2f642e82f504064409ed425e5c783b92, type: 2}
@@ -3574,6 +3582,12 @@ GameObject:
 --- !u!114 &2129230226 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11486450, guid: e7324794b5799fe48897ac96875328bb,
+    type: 2}
+  m_PrefabInternal: {fileID: 2129230221}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+--- !u!114 &2129230227 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11491494, guid: e7324794b5799fe48897ac96875328bb,
     type: 2}
   m_PrefabInternal: {fileID: 2129230221}
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
