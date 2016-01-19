@@ -218,15 +218,18 @@ public class TooBeeController : MonoBehaviour {
 
 	public void setIsInvulnerable(bool isInvulnerable) {
 		mIsInvulnerable = isInvulnerable;
+		ParticleSystem ps = GetComponent<ParticleSystem>();
+		var emi = ps.emission;
 		if (mIsInvulnerable) {
-			GetComponent<ParticleSystem>().Play();
+			ps.Play();
+			emi.enabled = true;
 			GameObject gameControlObject = GameObject.FindWithTag ("GameController");
 			GameController gameController = gameControlObject.GetComponent <GameController>();
 			gameController.setInvulnerabilityCountDown(10f);
-			Debug.Log("play");
+			Debug.Log("particles play");
 		} else {
-			GetComponent<ParticleSystem>().Stop();
-			Debug.Log("stop");
+			emi.enabled = false;
+			Debug.Log("particles pause");
 		}
 	}
 
